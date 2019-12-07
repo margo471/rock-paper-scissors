@@ -8,19 +8,20 @@
         <p>To Play, right click anywhere on the screen and select "Inspect" Now go to Console and have a blast!</p>
         <script>
             function computerPlay() {
-                let play = Math.floor(Math.random() * 3);
-                if (play = 0) {
+                play = Math.floor(Math.random() * 3 + 1);
+                console.log(play)
+                computerChoice = "Not yet rolled"
+                console.log(computerChoice)
+                if (play == 1) {
                     computerChoice = "Rock"
-                }
-                else if (play = 1) {
+                } else if (play == 2) {
                     computerChoice = "Paper"
-                }
-                else {
+                } else if (play == 3) {
                     computerChoice = "Scissors"
                 }
-                return play
-
+                return computerChoice
             }
         </script>
     </body>
 </html>
+
